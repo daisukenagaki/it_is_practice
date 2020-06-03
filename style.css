@@ -1,0 +1,96 @@
+/*****************************************
+共通設定
+******************************************/
+
+/*
+ ページ全体のフォント設定
+*/
+html {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+  font-size: 13px;
+  line-height: 160%;
+  color: #333;
+}
+/*
+すべてのブラウザ用に、デフォルトのマージンを取り除く。
+*/
+body {
+  margin: 0;
+}
+
+/*
+IE9+用に、displayプロパティを定義。
+1. Edge, IE, Firefox用、details要素とsummary要素に「display: block;」を定義。
+2. IE, Firefox用、main要素に「display: block;」を定義。
+*/
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+display: block;
+}
+
+/*
+IE9+用、displayプロパティを定義。
+*/
+
+audio,
+canvas,
+progress,
+video {
+display: inline-block;
+}
+
+/* Clearfix */
+.clearfix:after {
+  content:" ";
+  display:block;
+  clear:both;
+}
+
+/* 追加マージン */
+.mb5 {margin-bottom: 5px !important;}
+.mb10 {margin-bottom: 10px !important;}
+.mb15 {margin-bottom: 15px !important;}
+.mb20 {margin-bottom: 20px !important;}
+.mb30 {margin-bottom: 30px !important;}
+.mb40 {margin-bottom: 40px !important;}
+
+strong {
+  color: #FF5722;
+}
+
+em {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*****************************************
+レイアウト関連
+******************************************/
+
+/* wrapper関連
+**********************/
+
+.wrapper {
+  width: 100px;
+  margin: 0;
+}
+
+.row1 {
+  border-top: 3px solid #263238;
+  background: url(../images/bg_head.gif);
+}
+
+.row2 {
+  background: #263238;
+}
